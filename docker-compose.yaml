@@ -4,6 +4,7 @@ services:
     image: guillheu/tmodloader-dedicated-server
     volumes:
       # - ./Mods:/root/.local/share/Terraria/tModLoader/Mods
+      - ./ModConfigs:/root/.local/share/Terraria/tModLoader/ModConfigs
       - ./Worlds:/root/.local/share/Terraria/tModLoader/Worlds
       - ./serverconfig.txt:/root/terraria-server/serverconfig.txt
       - ./install.txt:/root/terraria-server/install.txt
